@@ -4,7 +4,7 @@ from loguru import logger
 
 from cashu.core.settings import CASHU_DIR, LIGHTNING
 from cashu.lightning import WALLET
-from cashu.mint.migrations import m001_initial
+from cashu.mint.business.migrations import m001_initial
 
 from . import ledger
 

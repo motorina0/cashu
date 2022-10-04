@@ -3,7 +3,7 @@ from re import S
 
 from cashu.core.business.helpers import async_unwrap
 from cashu.core.migrations import migrate_databases
-from cashu.wallet import migrations
+from cashu.wallet.business import migrations
 from cashu.wallet.wallet import Wallet as Wallet1
 from cashu.wallet.wallet import Wallet as Wallet2
 

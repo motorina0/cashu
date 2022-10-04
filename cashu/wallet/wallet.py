@@ -28,7 +28,7 @@ from cashu.core.db import Database
 from cashu.core.business.secp import PublicKey
 from cashu.core.settings import DEBUG
 from cashu.core.business.split import amount_split
-from cashu.wallet.crud import (
+from cashu.wallet.business.crud import (
     get_proofs,
     invalidate_proof,
     secret_used,

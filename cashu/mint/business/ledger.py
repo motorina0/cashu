@@ -16,7 +16,7 @@ from cashu.core.business.secp import PrivateKey, PublicKey
 from cashu.core.settings import LIGHTNING, MAX_ORDER
 from cashu.core.business.split import amount_split
 from cashu.lightning import WALLET
-from cashu.mint.crud import (
+from cashu.mint.business.crud import (
     get_lightning_invoice,
     get_proofs_used,
     invalidate_proof,

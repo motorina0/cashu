@@ -7,7 +7,7 @@ from loguru import logger
 
 from cashu.core.settings import DEBUG, VERSION
 from cashu.lightning import WALLET
-from cashu.mint.migrations import m001_initial
+from cashu.mint.business.migrations import m001_initial
 
 from . import ledger
 from .router import router
