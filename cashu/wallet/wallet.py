@@ -7,8 +7,8 @@ from typing import List
 import requests
 from loguru import logger
 
-import cashu.core.b_dhke as b_dhke
-from cashu.core.base import (
+import cashu.core.business.b_dhke as b_dhke
+from cashu.core.business.base import (
     BlindedMessage,
     BlindedSignature,
     CheckPayload,
@@ -18,16 +18,16 @@ from cashu.core.base import (
     Proof,
     SplitPayload,
 )
-from cashu.core.script import (
+from cashu.core.business.script import (
     step0_carol_privkey,
     step0_carol_checksig_redeemscrip,
     step1_carol_create_p2sh_address,
     step2_carol_sign_tx,
 )
 from cashu.core.db import Database
-from cashu.core.secp import PublicKey
+from cashu.core.business.secp import PublicKey
 from cashu.core.settings import DEBUG
-from cashu.core.split import amount_split
+from cashu.core.business.split import amount_split
 from cashu.wallet.crud import (
     get_proofs,
     invalidate_proof,

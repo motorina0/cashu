@@ -15,9 +15,9 @@ import click
 from loguru import logger
 
 import cashu.core.bolt11 as bolt11
-from cashu.core.base import Proof
+from cashu.core.business.base import Proof
 from cashu.core.bolt11 import Invoice
-from cashu.core.helpers import fee_reserve
+from cashu.core.business.helpers import fee_reserve
 from cashu.core.migrations import migrate_databases
 from cashu.core.settings import CASHU_DIR, DEBUG, LIGHTNING, MINT_URL, VERSION, ENV_FILE
 from cashu.wallet import migrations

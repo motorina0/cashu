@@ -1,7 +1,7 @@
 import time
 from typing import Optional, List, Any
 
-from cashu.core.base import Proof, P2SHScript
+from cashu.core.business.base import Proof, P2SHScript
 from cashu.core.db import Connection, Database
 
 

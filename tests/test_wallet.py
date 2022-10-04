@@ -1,7 +1,7 @@
 import time
 from re import S
 
-from cashu.core.helpers import async_unwrap
+from cashu.core.business.helpers import async_unwrap
 from cashu.core.migrations import migrate_databases
 from cashu.wallet import migrations
 from cashu.wallet.wallet import Wallet as Wallet1

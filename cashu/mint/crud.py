@@ -1,7 +1,7 @@
 import secrets
 from typing import Optional
 
-from cashu.core.base import Invoice, Proof
+from cashu.core.business.base import Invoice, Proof
 from cashu.core.db import Connection, Database
 
 
