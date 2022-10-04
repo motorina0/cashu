@@ -1,8 +1,8 @@
 import time
 from typing import Optional, List, Any
 
-from cashu.core.business.base import Proof, P2SHScript
-from cashu.core.db import Connection, Database
+from .. import Proof, P2SHScript
+from .. import Connection, Database
 
 
 async def store_proof(
