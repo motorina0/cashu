@@ -2,11 +2,12 @@ import asyncio
 
 from loguru import logger
 
-from cashu.core.settings import CASHU_DIR, LIGHTNING
+from cashu.core.settings import CASHU_DIR, LIGHTNING, MINT_PRIVATE_KEY
 from cashu.lightning import WALLET
+from cashu.mint.business.ledger import Ledger
 from cashu.mint.business.migrations import m001_initial
 
-from . import ledger
+ledger = Ledger(MINT_PRIVATE_KEY, "data/mint")
 
 
 async def load_ledger():

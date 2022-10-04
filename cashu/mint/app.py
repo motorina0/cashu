@@ -9,9 +9,9 @@ from cashu.core.settings import DEBUG, VERSION
 from cashu.lightning import WALLET
 from cashu.mint.business.migrations import m001_initial
 
-from . import ledger
 from .router import router
-from .startup import load_ledger
+from .startup import load_ledger, ledger
+
 
 
 def create_app(config_object="core.settings") -> FastAPI:

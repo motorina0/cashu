@@ -5,7 +5,7 @@ from secp256k1 import PublicKey
 
 from cashu.core.business.base import (CheckPayload, MeltPayload, MintPayloads,
                              SplitPayload)
-from cashu.mint import ledger
+from .startup import ledger
 
 router: APIRouter = APIRouter()
 
